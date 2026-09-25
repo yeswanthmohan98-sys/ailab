@@ -1,0 +1,3 @@
+PS C:\Users\mngok\AppData\Local\Programs\Microsoft VS Code> & C:\Users\mngok\AppData\Local\Python\pythoncore-3.14-64\python.exe "c:/Users/mngok/OneDrive/Documents/Lab - Program Files/AI - Lab/ex08/ex08.py"
+
+P(B | J=1, M=1): {True: 0.2841718353643929, False: 0.7158281646356071}

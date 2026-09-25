@@ -1,0 +1,4 @@
+PS C:\Users\mngok\AppData\Local\Programs\Microsoft VS Code> & C:\Users\mngok\AppData\Local\Python\pythoncore-3.14-64\python.exe "c:/Users/mngok/OneDrive/Documents/Lab - Program Files/AI - Lab/ex06/ex06.py"
+
+Forward Chaining: Goal F -> True | Facts: {'F', 'E', 'A', 'C', 'D', 'B'}
+Backward Chaining: Goal F -> True
