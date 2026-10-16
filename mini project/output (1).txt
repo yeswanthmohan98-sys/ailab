@@ -1,0 +1,33 @@
+No CSV supplied -> using built-in synthetic demo data
+Articles: 3000 | REAL: 1532 | FAKE: 1468
+TF-IDF matrix: train (2400, 2965), test (600, 2965)
+
+=== MODEL COMPARISON (test set) ===
+                  Model  Accuracy  Precision  Recall  F1-score
+          Random Forest    0.7383     0.7231  0.7551    0.7388
+Multinomial Naive Bayes    0.7350     0.7213  0.7483    0.7346
+    Logistic Regression    0.7150     0.7003  0.7313    0.7155
+     Passive Aggressive    0.5867     0.5747  0.6020    0.5880
+
+Best model: Random Forest
+
+=== CLASSIFICATION REPORT: Random Forest ===
+              precision    recall  f1-score   support
+
+        REAL     0.7543    0.7222    0.7379       306
+        FAKE     0.7231    0.7551    0.7388       294
+
+    accuracy                         0.7383       600
+   macro avg     0.7387    0.7387    0.7383       600
+weighted avg     0.7390    0.7383    0.7383       600
+
+Confusion matrix [rows=actual, cols=predicted] (REAL, FAKE):
+[[221  85]
+ [ 72 222]]
+
+Top words pointing to REAL: ['budget', 'verified', 'statistics', 'evidence', 'investigation', 'official', 'press conference', 'conference']
+Top words pointing to FAKE: ['miracle', 'destroyed', 'cover', 'share', 'proof', 'exposed', 'shocking', 'statement report']
+
+=== PREDICTIONS ON NEW TEXT ===
+[FAKE] Shocking secret exposed: leaked bombshell proves the cover-up, must share before it is banned
+[REAL] The health ministry released new figures this week, and the committee approved the audited budget
